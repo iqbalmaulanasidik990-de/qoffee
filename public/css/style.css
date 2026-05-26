@@ -1,0 +1,692 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #0d0d0d;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+
+.navbar{
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(15px);
+    padding: 20px 0;
+    transition: 0.3s;
+}
+
+.navbar-brand{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white !important;
+}
+
+.nav-link{
+    color: white !important;
+    margin-left: 25px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-link:hover{
+    color: #d4b07b !important;
+}
+
+/* Hero */
+
+.hero{
+
+    min-height: 100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
+    url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1600&auto=format&fit=crop');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+}
+
+/* Hero Title */
+
+.hero-title{
+
+    font-size: 72px;
+    font-weight: 700;
+    line-height: 1.1;
+    color: white;
+}
+
+/* Coffee Text */
+
+.coffee-text{
+    color: #d4b07b;
+}
+
+/* Description */
+
+.hero-description{
+
+    color: #d1d1d1;
+    font-size: 20px;
+    line-height: 1.9;
+    margin-top: 30px;
+    max-width: 550px;
+}
+
+/* Button */
+
+.hero-button{
+    margin-top: 40px;
+}
+
+.btn-queue{
+
+    background: #d4b07b;
+    color: black;
+    padding: 16px 42px;
+    border-radius: 50px;
+    font-weight: 600;
+    border: none;
+    font-size: 17px;
+    transition: 0.3s;
+}
+
+.btn-queue:hover{
+
+    background: white;
+    color: black;
+    transform: translateY(-5px);
+}
+
+/* Queue Card */
+
+.queue-card{
+
+    background: rgba(255,255,255,0.08);
+
+    backdrop-filter: blur(20px);
+
+    border-radius: 35px;
+
+    padding: 60px 50px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    box-shadow: 0 0 40px rgba(0,0,0,0.4);
+
+    text-align: center;
+}
+
+.queue-label{
+
+    color: #d6d6d6;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.queue-number{
+
+    font-size: 95px;
+    font-weight: 700;
+    color: #d4b07b;
+}
+
+.queue-info{
+
+    color: #c2c2c2;
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+/* Features */
+
+.features{
+
+    padding: 120px 0;
+    background: #101010;
+}
+
+.section-title h1{
+
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.section-title p{
+
+    color: #bdbdbd;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+/* Feature Card */
+
+.feature-box{
+
+    background: #181818;
+
+    padding: 45px;
+
+    border-radius: 30px;
+
+    transition: 0.3s;
+
+    height: 100%;
+
+    border: 1px solid rgba(255,255,255,0.05);
+}
+
+.feature-box:hover{
+
+    transform: translateY(-10px);
+    border-color: #d4b07b;
+}
+
+.feature-icon{
+
+    font-size: 60px;
+    color: #d4b07b;
+}
+
+.feature-box h3{
+
+    margin-top: 30px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.feature-box p{
+
+    color: #bcbcbc;
+    margin-top: 15px;
+    line-height: 1.9;
+    font-size: 16px;
+}
+
+/* Footer */
+
+footer{
+
+    background: #080808;
+    padding: 35px 0;
+    text-align: center;
+}
+
+footer p{
+
+    color: #8f8f8f;
+    margin: 0;
+}
+
+/* ===================================== */
+/* Queue Page */
+/* ===================================== */
+
+.queue-page{
+
+    min-height: 100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.82)),
+    url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1600&auto=format&fit=crop');
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 120px 0;
+}
+
+/* Queue Form Box */
+
+.queue-form-box{
+
+    background: rgba(255,255,255,0.07);
+
+    backdrop-filter: blur(20px);
+
+    border-radius: 35px;
+
+    padding: 50px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    box-shadow: 0 0 40px rgba(0,0,0,0.4);
+}
+
+/* Queue Title */
+
+.queue-title{
+
+    font-size: 55px;
+    font-weight: 700;
+    color: white;
+}
+
+/* Subtitle */
+
+.queue-subtitle{
+
+    color: #d4b07b;
+
+    letter-spacing: 2px;
+
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+/* Description */
+
+.queue-description{
+
+    color: #c7c7c7;
+
+    margin-top: 20px;
+
+    line-height: 1.8;
+}
+
+/* Premium Menu Card */
+
+.premium-menu-card{
+
+    background: rgba(255,255,255,0.06);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 25px;
+
+    padding: 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+.premium-menu-card:hover{
+
+    transform: translateY(-5px);
+
+    border-color: #d4b07b;
+}
+
+/* Menu Left */
+
+.menu-left{
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+}
+
+/* Coffee Image */
+
+.coffee-image{
+
+    width: 90px;
+
+    height: 90px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    border: 2px solid rgba(255,255,255,0.08);
+}
+
+/* Coffee Name */
+
+.coffee-name{
+
+    font-size: 22px;
+
+    font-weight: 600;
+
+    margin-bottom: 6px;
+}
+
+/* Coffee Price */
+
+.coffee-price{
+
+    color: #d4b07b;
+
+    font-size: 17px;
+
+    margin: 0;
+}
+
+/* Quantity Input */
+
+.quantity-input{
+
+    width: 90px !important;
+
+    text-align: center;
+
+    font-size: 20px;
+
+    font-weight: 600;
+}
+
+/* Label */
+
+.form-label{
+
+    color: white;
+
+    font-weight: 500;
+
+    margin-bottom: 10px;
+}
+
+/* Input */
+
+.form-control{
+
+    background: rgba(255,255,255,0.08) !important;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    color: white !important;
+
+    height: 55px;
+
+    border-radius: 15px;
+}
+
+.form-control:focus{
+
+    box-shadow: none;
+
+    border-color: #d4b07b;
+
+    background: rgba(255,255,255,0.08);
+}
+
+/* Placeholder */
+
+.form-control::placeholder{
+    color: #9e9e9e;
+}
+
+/* Input Group */
+
+.input-group-text{
+
+    background: rgba(255,255,255,0.08);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    color: #d4b07b;
+
+    border-radius: 15px 0 0 15px;
+}
+
+/* Submit Button */
+
+.btn-queue-submit{
+
+    background: #d4b07b;
+
+    color: black;
+
+    padding: 16px;
+
+    border-radius: 18px;
+
+    border: none;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+.btn-queue-submit:hover{
+
+    background: white;
+
+    transform: translateY(-3px);
+}
+
+/* Responsive */
+
+@media(max-width: 992px){
+
+    .hero{
+
+        text-align: center;
+        padding-top: 120px;
+    }
+
+    .hero-title{
+        font-size: 55px;
+    }
+
+    .hero-description{
+        margin: 25px auto 0;
+    }
+
+    .queue-card{
+        margin-top: 60px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .hero-title{
+        font-size: 42px;
+    }
+
+    .queue-number{
+        font-size: 70px;
+    }
+
+    .section-title h1{
+        font-size: 38px;
+    }
+
+    .feature-box{
+        padding: 35px;
+    }
+
+    .queue-form-box{
+        padding: 35px 25px;
+    }
+
+    .queue-title{
+        font-size: 40px;
+    }
+
+    .premium-menu-card{
+
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 20px;
+    }
+
+    .menu-left{
+
+        flex-direction: column;
+    }
+
+}
+/* ===================================== */
+/* ADMIN PAGE */
+/* ===================================== */
+
+.admin-page{
+
+    min-height: 100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.82), rgba(0,0,0,0.88)),
+    url('https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1600&auto=format&fit=crop');
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 120px 0;
+}
+
+.admin-box{
+
+    background: rgba(255,255,255,0.06);
+
+    backdrop-filter: blur(20px);
+
+    border-radius: 30px;
+
+    padding: 40px;
+
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.admin-title{
+
+    color: white;
+
+    font-size: 40px;
+
+    font-weight: 700;
+}
+
+.admin-subtitle{
+
+    color: #bdbdbd;
+}
+
+.admin-table{
+
+    color: white;
+}
+
+.admin-table thead{
+
+    background: rgba(255,255,255,0.05);
+}
+
+.admin-table th{
+
+    color: #d4b07b;
+
+    border: none;
+
+    padding: 20px;
+}
+
+.admin-table td{
+
+    border-color: rgba(255,255,255,0.05);
+
+    padding: 20px;
+}
+
+.status-badge{
+
+    background: #d4b07b;
+
+    color: black;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+}
+/* ===================================== */
+/* STATUS BADGE */
+/* ===================================== */
+
+.status-badge{
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    display: inline-block;
+}
+
+/* Waiting */
+
+.status-badge.waiting{
+
+    background: #ffc107;
+
+    color: black;
+}
+
+/* Processing */
+
+.status-badge.process{
+
+    background: #0d6efd;
+
+    color: white;
+}
+
+/* Done */
+
+.status-badge.done{
+
+    background: #198754;
+
+    color: white;
+}
+.total-price-box {
+
+    background: rgba(255,255,255,0.06);
+
+    border: 1px solid rgba(255,255,255,0.1);
+
+    padding: 25px;
+
+    border-radius: 20px;
+
+    text-align: left;
+
+    backdrop-filter: blur(10px);
+
+}
+
+.total-price-box h5 {
+
+    color: #bdbdbd;
+
+}
+
+.total-price-box h2 {
+
+    color: #ffffff;
+
+    font-size: 2rem;
+
+    font-weight: 700;
+
+}
