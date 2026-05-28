@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NO ANTRI</title>
+    <title>Qoffee</title>
 
     <!-- Bootstrap -->
 
@@ -249,7 +249,7 @@
         <div class="container">
 
             <p>
-                © 2026 NO ANTRI — Smart Coffee Queue System
+                © 2026 Qoffee — Smart Coffee Queue System
             </p>
 
         </div>
