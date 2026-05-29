@@ -1,4 +1,3 @@
-```php id="p6m1ws"
 <?php
 
 use Illuminate\Support\Facades\Route;
