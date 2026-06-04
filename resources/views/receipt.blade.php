@@ -71,6 +71,11 @@
             {{ $queue->status }}
         </div>
 
+        <div class="row">
+            <span class="label">Payment Method :</span>
+            {{ $queue->payment_method }}
+        </div>
+
         <hr>
 
         @if($queue->latte > 0)

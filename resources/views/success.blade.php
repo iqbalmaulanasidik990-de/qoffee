@@ -135,6 +135,13 @@
                                 Rp {{ number_format($queue->total_price) }}
 
                             </p>
+                            <p>
+
+                                <strong>Payment Method :</strong>
+
+                                {{ $queue->payment_method }}
+
+                            </p>
 
                             <!-- STATUS -->
 
@@ -190,7 +197,7 @@
 
                         </div>
 
-                        
+
 
                         <!-- DOWNLOAD PDF -->
 

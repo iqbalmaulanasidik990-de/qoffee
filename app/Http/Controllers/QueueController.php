@@ -15,7 +15,7 @@ class QueueController extends Controller
     {
         // VALIDATION
 
-        $request->validate([
+    $request->validate([
 
     'customer_name' => 'required|min:3',
 
