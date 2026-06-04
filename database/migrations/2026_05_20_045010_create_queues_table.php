@@ -37,6 +37,9 @@ return new class extends Migration
             // Total harga
             $table->integer('total_price')->default(0);
 
+            // Metode pembayaran
+            $table->string('payment_method')->default('Cash');
+
             // Status antrean
             $table->string('status')->default('waiting');
 

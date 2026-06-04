@@ -17,23 +17,27 @@ class QueueController extends Controller
 
         $request->validate([
 
-            'customer_name' => 'required|min:3',
+    'customer_name' => 'required|min:3',
 
-            'phone' => 'required|numeric|digits_between:10,13',
+    'phone' => 'required|numeric|digits_between:10,13',
 
-        ], [
+    'payment_method' => 'required',
 
-            'customer_name.required' => 'Nama wajib diisi',
+], [
 
-            'customer_name.min' => 'Nama minimal 3 karakter',
+    'customer_name.required' => 'Nama wajib diisi',
 
-            'phone.required' => 'Nomor HP wajib diisi',
+    'customer_name.min' => 'Nama minimal 3 karakter',
 
-            'phone.numeric' => 'Nomor HP harus angka',
+    'phone.required' => 'Nomor HP wajib diisi',
 
-            'phone.digits_between' => 'Nomor HP harus 10 sampai 13 digit',
+    'phone.numeric' => 'Nomor HP harus angka',
 
-        ]);
+    'phone.digits_between' => 'Nomor HP harus 10 sampai 13 digit',
+
+    'payment_method.required' => 'Pilih metode pembayaran',
+
+]);
 
         // VALIDASI MINIMAL ORDER
 
@@ -104,8 +108,9 @@ class QueueController extends Controller
 
             'total_price' => $totalPrice,
 
-            'status' => 'Waiting',
+            'payment_method' => $request->payment_method,
 
+            'status' => 'Waiting',
         ]);
 
         // REDIRECT SUCCESS

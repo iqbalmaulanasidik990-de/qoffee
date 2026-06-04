@@ -302,6 +302,42 @@
 
                             </div>
 
+                            <!-- PAYMENT METHOD -->
+
+                            <div class="mb-4">
+
+                                <label class="form-label">
+                                    Payment Method
+                                </label>
+
+                                <div class="input-group">
+
+                                    <span class="input-group-text">
+                                        <i class="bi bi-wallet2"></i>
+                                    </span>
+
+                                    <select
+                                        name="payment_method"
+                                        class="form-control">
+
+                                        <option value="">
+                                            Choose Payment Method
+                                        </option>
+
+                                        <option value="Cash">
+                                            Cash
+                                        </option>
+
+                                        <option value="QRIS">
+                                            QRIS
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                            </div>
+
                             <!-- Button -->
 
                             <button type="submit" class="btn btn-queue-submit w-100">
@@ -365,7 +401,7 @@
         cappuccinoInput.addEventListener('input', calculateTotal);
 
         calculateTotal();
-        
+
 
     </script>
 
