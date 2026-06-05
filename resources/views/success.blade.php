@@ -142,6 +142,32 @@
                                 {{ $queue->payment_method }}
 
                             </p>
+                            @if($queue->payment_method == 'QRIS')
+
+                                <hr>
+
+                                <h5 class="text-center">
+                                    Scan QRIS Untuk Pembayaran
+                                </h5>
+
+                                <p class="text-center">
+                                    Silakan bayar sesuai total harga:
+                                    <br>
+                                    <strong>
+                                        Rp {{ number_format($queue->total_price) }}
+                                    </strong>
+                                </p>
+
+                                <div class="text-center mt-3">
+
+                                    <img
+                                        src="{{ asset('images/qris.jpg') }}"
+                                        width="250"
+                                        class="img-fluid rounded">
+
+                                </div>
+
+                                @endif
 
                             <!-- STATUS -->
 
