@@ -209,27 +209,19 @@
 
                     <table class="table admin-table align-middle">
 
-                        <thead>
-
-                            <tr>
-
-                                <th>Queue</th>
-
-                                <th>Name</th>
-
-                                <th>Phone</th>
-
-                                <th>Orders</th>
-
-                                <th>Total</th>
-
-                                <th>Status</th>
-
-                                <th>Action</th>
-
-                            </tr>
-
-                        </thead>
+                            <thead>
+                                <tr>
+                                    <th>Queue</th>
+                                    <th>Name</th>
+                                    <th>Phone</th>
+                                    <th>Orders</th>
+                                    <th>Payment</th>
+                                    <th>Notes</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                                </thead>
 
                         <tbody>
 
@@ -287,6 +279,9 @@
 
                                     @endif
 
+
+
+
                                     @if($queue->americano > 0)
 
                                         <div class="mb-1">
@@ -302,6 +297,22 @@
                                         </div>
 
                                     @endif
+
+                                </td>
+
+                                <!-- Payment Method -->
+
+                                <td>
+
+                                    {{ $queue->payment_method }}
+
+                                </td>
+
+                                <!-- Notes -->
+
+                                <td>
+
+                                    {{ $queue->notes ?? '-' }}
 
                                 </td>
 
