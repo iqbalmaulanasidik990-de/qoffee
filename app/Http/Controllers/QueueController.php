@@ -93,23 +93,25 @@ class QueueController extends Controller
         $queue = Queue::create([
 
             'queue_number' => $queueNumber,
-
+        
             'customer_name' => $request->customer_name,
-
+        
             'phone' => $request->phone,
-
+        
             'total_people' => $request->total_people,
-
+        
             'latte' => $request->latte,
-
+        
             'americano' => $request->americano,
-
+        
             'cappuccino' => $request->cappuccino,
-
+        
             'total_price' => $totalPrice,
-
+        
             'payment_method' => $request->payment_method,
-
+        
+            'notes' => $request->notes,
+        
             'status' => 'Waiting',
         ]);
 

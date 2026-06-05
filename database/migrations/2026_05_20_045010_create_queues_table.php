@@ -40,11 +40,13 @@ return new class extends Migration
             // Metode pembayaran
             $table->string('payment_method')->default('Cash');
 
+            // Catatan pesanan
+            $table->text('notes')->nullable();
+
             // Status antrean
             $table->string('status')->default('waiting');
 
             $table->timestamps();
-
         });
     }
 

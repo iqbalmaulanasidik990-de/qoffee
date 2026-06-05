@@ -337,6 +337,21 @@
                                 </div>
 
                             </div>
+                            <!-- NOTES -->
+
+                            <div class="mb-4">
+
+                                <label class="form-label">
+                                    Order Notes
+                                </label>
+
+                                <textarea
+                                    name="notes"
+                                    class="form-control"
+                                    rows="3"
+                                    placeholder="Contoh: extra gula, less ice, tanpa es, dll">{{ old('notes') }}</textarea>
+
+                            </div>
 
                             <!-- Button -->
 

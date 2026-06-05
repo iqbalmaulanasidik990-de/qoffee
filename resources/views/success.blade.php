@@ -142,6 +142,20 @@
                                 {{ $queue->payment_method }}
 
                             </p>
+
+                            @if($queue->notes)
+
+                            <p>
+
+                                <strong>Notes :</strong>
+
+                                {{ $queue->notes }}
+
+                            </p>
+
+                            @endif
+
+
                             @if($queue->payment_method == 'QRIS')
 
                                 <hr>
@@ -168,6 +182,7 @@
                                 </div>
 
                                 @endif
+                                
 
                             <!-- STATUS -->
 

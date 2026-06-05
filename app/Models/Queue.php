@@ -25,6 +25,8 @@ class Queue extends Model
         'total_price',
 
         'payment_method',
+        
+        'notes',
 
         'status',
 
